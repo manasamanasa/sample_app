@@ -1,0 +1,22 @@
+.container {
+	width 710px;
+}
+body {
+	background: #cff;
+}
+header {
+	padding-top: 20px;
+}
+Header img {
+	paddinf: 1em
+	background: #fff ;
+}
+
+section {
+	margin-top: 1em;
+	font-size: 120%;
+	padding: 20px;
+	Background: #fff;
+	
+}
+
