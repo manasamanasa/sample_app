@@ -9,8 +9,9 @@
 #  updated_at :datetime        not null
 #
 class User < ActiveRecord::Base
-  attr_accessible :name, :email, :password, :password_confirmation
-  
+   
+  attr_accessible :name, :email, 
+
   before_save { |user| user.email = email.downcase }
 
   validates :name, presence: true, length: { maximum: 50 }
@@ -18,5 +19,5 @@ class User < ActiveRecord::Base
   validates :email, presence:   true,
                     format:     { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
-  
-end
+  end
+
